@@ -1,0 +1,199 @@
+body {
+  background-color: hsl(229, 57%, 11%);
+  background-image: url(images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% auto;
+  font-family: "Raleway", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-main {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  transform: translateY(-50px);
+}
+
+.file-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 22rem;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 8px 7rem 8px 8px;
+}
+
+.file-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-file {
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(229, 57%, 11%);
+  border: 0;
+  border-radius: 10px;
+}
+
+.storage {
+  position: relative;
+  width: 34rem;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 10px;
+  color: white;
+}
+
+.storage p {
+  margin: 0;
+}
+
+.storage .storage-info {
+  margin-bottom: 0.75rem;
+}
+
+.storage-info {
+  color: hsl(243, 100%, 93%);
+  font-size: 0.875rem;
+}
+
+.storage strong {
+  color: white;
+  font-weight: 700;
+}
+
+.storage-bar {
+  width: 100%;
+  height: 1.1rem;
+  padding: 2px;
+  box-sizing: border-box;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 20px;
+}
+
+.storage-used {
+  position: relative;
+  width: 81.5%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  border-radius: 20px;
+}
+
+.storage-used::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: translateY(-55%);
+}
+
+.storage-limits {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.6rem;
+  color: hsl(243, 100%, 93%);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.storage-left {
+  position: absolute;
+  top: -2.5rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background-color: #ffffff;
+  border-radius: 10px 10px 0 10px;
+  color: hsl(229, 7%, 55%);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.storage-left span {
+  color: hsl(229, 57%, 11%);
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.storage-left::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -18px;
+  width: 0;
+  height: 0;
+  border-width: 18px 0 0 18px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+@media (max-width: 48rem) {
+  body {
+    background-image: url(images/bg-mobile.png);
+    background-size: cover;
+  }
+
+  .card-main {
+    flex-direction: column;
+    width: calc(100% - 3rem);
+    max-width: 22rem;
+    gap: 1rem;
+    transform: translateY(0);
+  }
+
+  .file-actions,
+  .storage {
+    width: 100%;
+  }
+
+  .storage-info {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .storage-left {
+    top: auto;
+    right: auto;
+    bottom: -2rem;
+    left: 50%;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10px;
+    white-space: nowrap;
+    transform: translateX(-50%);
+  }
+
+  .storage-left::after {
+    display: none;
+  }
+}
