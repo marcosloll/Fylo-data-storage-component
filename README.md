@@ -1,83 +1,46 @@
-Frontend Mentor - Fylo Data Storage Component Solution
+# Fylo Data Storage Component
 
-This is my solution to the Fylo data storage component challenge on Frontend Mentor.
+Componente responsivo de armazenamento desenvolvido como solução para um desafio do [Frontend Mentor](https://www.frontendmentor.io/).
 
-The goal was to reproduce the provided desktop and mobile designs as closely as possible while practicing responsive layouts with HTML and CSS.
+[![Abrir projeto](https://img.shields.io/badge/Abrir_projeto-FF4D97?style=for-the-badge&logo=googlechrome&logoColor=white)](https://marcosloll.github.io/Fylo-data-storage-component/)
+[![Código](https://img.shields.io/badge/Ver_código-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/marcosloll/Fylo-data-storage-component)
 
-Overview
+![Prévia do componente Fylo](./preview.jpg)
 
-The challenge
+## Sobre o projeto
 
-Users should be able to:
+O objetivo foi reproduzir os layouts de desktop e mobile fornecidos pelo Frontend Mentor, criando um componente que apresenta o espaço de armazenamento utilizado e o total restante.
 
-View the optimal layout depending on their device's screen size.
+## Funcionalidades
 
-See the storage usage component adapt correctly between desktop and mobile layouts.
+- Layout adaptado para desktop e dispositivos móveis.
+- Barra de progresso com gradiente e indicador visual.
+- Balão com o espaço restante.
+- Cartão de ações com ícones.
+- Tipografia personalizada com Google Fonts.
 
-Screenshots
+## Tecnologias
 
-Desktop
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
+## Aprendizados
 
+O projeto ajudou a praticar:
 
-Mobile
+- Alinhamento de cartões com Flexbox.
+- Mudança do layout de linha para coluna em telas menores.
+- Uso pontual de posicionamento relativo e absoluto.
+- Construção de barra de progresso com gradiente e pseudo-elemento.
+- Criação do triângulo do balão com pseudo-elemento.
+- Ajustes responsivos em larguras como 320 px, 375 px e 420 px.
 
+## Executar localmente
 
+1. Clone este repositório.
+2. Abra a pasta do projeto.
+3. Execute o arquivo `index.html` diretamente no navegador ou com o Live Server.
 
-My process
+## Autor
 
-Built with
-
-Semantic HTML5 markup
-
-CSS3
-
-Flexbox
-
-Responsive media queries
-
-CSS pseudo-elements
-
-Linear gradients
-
-Google Fonts - Raleway
-
-What I learned
-
-This project helped me practice how to turn a static design into a responsive component without relying on fixed positioning for the entire layout.
-
-Some of the main things I worked on were:
-
-Using Flexbox to align two cards by their bottom edge on desktop.
-
-Switching the layout from a row to a column on smaller screens.
-
-Using position: relative and position: absolute only where they were useful, such as the remaining-storage label.
-
-Creating the progress bar with a gradient, an inner track and a pseudo-element for the white indicator.
-
-Using a pseudo-element to create the speech-bubble triangle on desktop and removing it on mobile.
-
-Keeping the mobile layout responsive at widths such as 320px, 375px and 420px.
-
-Continued development
-
-In future projects, I want to keep improving:
-
-Responsive spacing and sizing without overusing fixed values.
-
-CSS organization and avoiding duplicated rules.
-
-Choosing breakpoints based on when the layout actually needs to change.
-
-Building accessible and semantic components from the start.
-
-AI collaboration
-
-I used ChatGPT as a learning assistant during the challenge. I used it mainly to review my work, compare my implementation with the reference designs, understand CSS behavior and debug layout issues. I implemented and adjusted the project step by step while using the feedback to understand why each change worked.
-
-Author
-
-Marcos Davy
-
-Challenge by Frontend Mentor
+Desenvolvido por [Marcos Davy](https://github.com/marcosloll).
